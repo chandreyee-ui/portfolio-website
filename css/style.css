@@ -1,9 +1,113 @@
 /*
 Colors used:
-blue- #013E75;
+dark blue- #130e74;
+blue- #0417c1;
+green- #3c6f53;
 grey- #F5F5F5;
+dark grey- #343434;
 white- #FFFFFF;
 */
-span{
-    display: block;
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #343434;
+}
+
+h1,
+h2,
+h3,
+{
+line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+h1 span{
+        display: block;
+        font-size: 0.75em;
+        margin-block-start: 1em;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a, 
+a:visited {
+    color: #130e74;
+}
+
+a:hover,
+a:focus {
+    color: #0417c1;
+    text-decoration: none;
+}
+
+a:active {
+    color: #3c6f53;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #130e74;
+    font-weight: 400;
+    padding: 16px 48px;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px 2px #02002629;
+    transition: all 0.3s ease-in-out;
+}
+.btn:visited {
+    color: #130e74;
+}
+.btn:hover,
+.btn:focus {
+    color: #0417c1;
+    transform: scale(1.1);
+}
+.btn:active {
+    color: #130e74;
+    box-shadow: 2px 2px 5px 5px #3c6f53;
+}
+.project-card__btn {
+    background-color: #130e74;
+    color: #ffffff;
+}
+
+.project-card__btn:visited {
+    background-color: #130e74;
+    color: #ffffff;
+}
+
+.project-card__btn:hover,
+.project-card__btn:focus {
+    background-color: #0417c1;
+    color: #ffffff;
+}
+
+.project-card__btn:active {
+    background-color: #3c6f53;
+    color: #ffffff;
 }
