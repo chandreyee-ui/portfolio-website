@@ -2,15 +2,16 @@
 Colors used:
 dark blue- #130e74;
 blue- #0417c1;
-green- #3c6f53;
+active blue- #000a4d;
 grey- #F5F5F5;
 dark grey- #343434;
 white- #FFFFFF;
 */
-html{
+html {
     font-size: 62.5%;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
@@ -25,23 +26,23 @@ body {
 
 h1,
 h2,
-h3
-{
-line-height: 1.4;
-margin: 0;
+h3 {
+    line-height: 1.4;
+    margin: 0;
 }
 
 h1 {
     font-size: 2.6rem;
     font-weight: 700;
 }
-h1 span{
-        display: block;
-        font-size: 0.75em;
-        margin-block-start: 1em;
-        font-weight: 500;
-        line-height: 1.2;
-    }
+
+h1 span {
+    display: block;
+    font-size: 0.75em;
+    margin-block-start: 1em;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 h2 {
     font-size: 2.2rem;
@@ -52,11 +53,12 @@ h3 {
     font-size: 1.9rem;
     font-weight: 400;
 }
-p{
+
+p {
     margin: 0;
 }
 
-ul{
+ul {
     margin: 0;
 }
 
@@ -64,7 +66,7 @@ img {
     width: 100%;
 }
 
-a, 
+a,
 a:visited {
     color: #130e74;
 }
@@ -76,7 +78,7 @@ a:focus {
 }
 
 a:active {
-    color: #3c6f53;
+    color: #000a4d;
 }
 
 .btn {
@@ -85,23 +87,27 @@ a:active {
     color: #130e74;
     font-weight: 400;
     padding: 16px 48px;
-    border-radius: 2px;
+    border-radius: 12px;
     text-decoration: none;
     box-shadow: 2px 2px 10px 2px #02002629;
     transition: all 0.3s ease-in-out;
 }
+
 .btn:visited {
     color: #130e74;
 }
+
 .btn:hover,
 .btn:focus {
     color: #0417c1;
     transform: scale(1.1);
 }
+
 .btn:active {
     color: #130e74;
-    box-shadow: 2px 2px 5px 5px #3c6f53;
+    box-shadow: 2px 2px 5px 5px #000a4d;
 }
+
 .project-card__btn {
     background-color: #130e74;
     color: #ffffff;
@@ -119,24 +125,25 @@ a:active {
 }
 
 .project-card__btn:active {
-    background-color: #3c6f53;
+    background-color: #000a4d;
     color: #ffffff;
 }
 
 /* HEADER STYLING */
-.logo{
-    font-family:"lato", sans-serif;
+.logo {
+    font-family: "lato", sans-serif;
     font-size: 3.2rem;
     font-weight: 700;
     color: #ffffff !important;
     text-decoration: none;
     line-height: 1;
 }
-nav{
-    width:100%;
+
+nav {
+    width: 100%;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin-block: 0;
     padding-inline-start: 0;
@@ -144,7 +151,7 @@ nav ul{
     justify-content: space-around;
 }
 
-nav a, 
+nav a,
 nav a:visited {
     color: #FFFFFF;
     text-decoration: none;
@@ -157,32 +164,33 @@ nav a:focus {
 }
 
 nav a:active {
-    color: #3c6f53;
+    color: #000a4d;
 }
 
-header{
+header {
     padding: 1em 1.5em;
-    background-color:#130e74;
+    background-color: #130e74;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-header .container{
+header .container {
     align-items: center;
 }
 
 /*LAYOUT */
-section{
+section {
     padding: 1em 1.5em;
     display: flex;
     flex-direction: column;
     gap: 3em;
 }
 
-.project-card{
+.project-card {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -191,7 +199,7 @@ section{
     box-shadow: 2px 2px 10px 2px #02002629;
 }
 
-.project-card__content-wrapper{
+.project-card__content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -199,60 +207,64 @@ section{
     align-items: flex-start;
 }
 
-.project-card__media-wrapper{
+.project-card__media-wrapper {
     display: flex;
 }
 
-.project-card__wrapper{
+.project-card__wrapper {
     display: flex;
     flex-direction: column;
     gap: 3em;
 }
 
-footer{
+.info {
+    color: #0417c1;
+    font-weight: 500;
+}
+
+footer {
     padding: 1.5em 1.5em;
     background-color: rgb(228, 233, 237);
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 1em;
 }
 
-.socials svg{
+.socials svg {
     display: flex;
     height: 3rem;
     fill: #FFFFFF;
 }
 
-.socials a{
+.socials a {
     padding: 0.8em;
-    background:#130e74;
+    background: #130e74;
     border-radius: 100vw;
     box-shadow: 2px 2px 10px 2px #02002629;
     transition: all 0.3s ease-in-out;
 }
 
 .socials a:hover,
-.socials a:focus
-{
+.socials a:focus {
     background: #0417c1;
 }
 
-.about-card{
+.about-card {
     display: flex;
     flex-direction: column;
     gap: 3em;
 }
 
-.about-card__content-wrapper{
+.about-card__content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: flex-start;
 }
 
-.skills-tools{
+.skills-tools {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -263,49 +275,52 @@ footer{
     padding: 2em 1em;
 }
 
-.skills-tools__wrapper{
+.skills-tools__wrapper {
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
-.skills-tools__content-wrapper{
+.skills-tools__content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.6em;
 }
 
-.title-card{
+.title-card {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1em;
 }
 
-.title-card__content-wrapper{
+.title-card__content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.6em;
 }
-.tag-wrapper{
+
+.tag-wrapper {
     display: flex;
-    gap: 0.6em;  
-    flex-wrap: wrap; 
+    gap: 0.6em;
+    flex-wrap: wrap;
 }
-.tag-wrapper p{
-    background-color: #130e74;
-    color: #FFFFFF;
+
+.tag-wrapper p {
+    background-color: #f2fbff;
+    color: #130e74;
+    box-shadow: 1px 1px 1px 1px #0200261a;
     padding: 0.5em 1.2em;
     border-radius: 100vw;
     font-size: 75%;
 }
 
-.title-card__insert{
+.title-card__insert {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1em;
 }
 
-.role-tools-duration{
+.role-tools-duration {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -316,60 +331,77 @@ footer{
     padding: 1em 1em;
 }
 
-.sidebar-section{
+.sidebar-section {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 3em;
 }
 
-.main-content{
+.main-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 2em;
 }
 
-.paragraph-wrapper{
+.paragraph-wrapper {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 1em;
     align-items: flex-start;
 }
 
-main{
+main {
     padding-block-end: 1.5em;
 }
+
+.learnings-card__media-wrapper {
+    margin-block-start: 3em;
+}
+
+/*
+    #work .container{
+    align-items: center;
+    }
+*/
 
 /*===============================================================
 TABLET STYLING
 ==============================================================*/
 
-@media (min-width:768px){
-    section{
-        padding: 2em 4em;  
+@media (min-width:768px) {
+    section {
+        padding: 2em 4em;
     }
-    header{
+
+    header {
         padding-inline: 4em;
     }
-    header .container{
+
+    header .container {
         flex-direction: row;
-        
+
     }
-    nav ul{
+
+    nav ul {
         justify-content: flex-end;
         gap: 3em;
     }
-    .project-card{
+
+    .project-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .project-card__media-wrapper img{
+
+    .project-card__media-wrapper img {
         object-fit: cover;
         height: 100%;
     }
-    .project-card__content-wrapper{
-       padding: 1em;
-}
-    footer .container{
+
+    .project-card__content-wrapper {
+        padding: 1em;
+    }
+
+    footer .container {
         align-items: center;
     }
 }
@@ -378,33 +410,55 @@ TABLET STYLING
 DESKTOP STYLING
 ==============================================================*/
 
-@media (min-width:1024px){
-    .container{
+@media (min-width:1024px) {
+    html{
+        font-size: 72%;
+    }
+   
+    .container {
         max-width: 1280px;
         margin-inline: auto;
     }
-    .sidebar-section{
+
+    .sidebar-section {
         display: grid;
         grid-template-columns: 1fr;
         width: 700px;
         margin-inline: auto;
     }
-    .role-tools-duration{
+
+    .role-tools-duration {
         height: 100%;
         padding: 2em 1em;
         gap: 2em;
     }
-    h2:not(body.home),.paragraph-wrapper,.title-card__insert, .title-card__content-wrapper, .about-card__content-wrapper, .skills-tools{
+
+    h2:not(.home h2),
+    .paragraph-wrapper,
+    .title-card__insert,
+    .title-card__content-wrapper,
+    .about-card__content-wrapper,
+    .skills-tools, .about h1{
         width: 700px;
         margin-inline: auto;
     }
-#hero h1, #hero p{
-    width: 1000px;
-    margin-inline: 0 auto ;
-}
 
-.project-card__content-wrapper{
-    justify-content: center;
-}
+    #hero .container{
+    
+    }
 
+    #hero h1,
+    #hero p,
+    .home h2, #work .container {
+        width: 1000px;
+    
+    }
+
+    .project-card__content-wrapper {
+        justify-content: center;
+    }
+
+    .kHcz0J{
+        max-width: 600px;
+    }
 }
