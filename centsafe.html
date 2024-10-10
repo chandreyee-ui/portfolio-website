@@ -17,14 +17,17 @@
 <body>
     <header>
         <div class="container">
-            <a class="logo" href="index.html">Chandreyee</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a class="logo" href="index.html">Chandreyee</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#work">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -214,6 +217,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -148,7 +148,10 @@ nav ul {
     margin-block: 0;
     padding-inline-start: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 3em;
+    /* flex-direction: column;
+     */
 }
 
 nav a,
@@ -166,21 +169,47 @@ nav a:focus {
 nav a:active {
     color: #000a4d;
 }
+nav .icon{
+    display: flex;
+}
+nav .icon svg{
+    width: 3rem;
+}
+
+nav ul li:last-child{
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+nav ul li:not(:last-child){
+    display: none;
+}
+
+.responsive nav ul li:not(:last-child){
+    display: flex;
+}
 
 header {
     padding: 1em 1.5em;
     background-color: #130e74;
 }
 
-.container {
+.container{
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-header .container {
-    align-items: center;
+.navtoggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1em;
 }
+/*header .container {
+    align-items: center;
+}*/
 
 /*LAYOUT */
 section {
@@ -377,9 +406,15 @@ TABLET STYLING
         padding-inline: 4em;
     }
 
-    header .container {
+    .navtoggle {
         flex-direction: row;
-
+        align-items: center;
+    }
+    .navtoggle nav ul li:last-child{
+        display: none;
+    }
+    nav ul li:not(:last-child){
+        display: flex;
     }
 
     nav ul {
