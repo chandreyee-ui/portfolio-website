@@ -9,6 +9,7 @@ white- #FFFFFF;
 */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -476,10 +477,6 @@ DESKTOP STYLING
     .skills-tools, .about h1{
         width: 700px;
         margin-inline: auto;
-    }
-
-    #hero .container{
-    
     }
 
     #hero h1,
